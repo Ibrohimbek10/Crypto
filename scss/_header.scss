@@ -1,0 +1,52 @@
+
+.site-header{
+    padding-top: 60px;
+    background-color: #0D0D2B;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        @include list-unstyled;
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        &:nth-child(5) button{
+            background-color: transparent;
+            border: none;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFF;
+        }
+        &:last-child button{
+            padding: 14px 32px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 150%;
+            color: #FFF;
+            background: #3671E9;
+            border-radius: 32px;
+            border: none;
+        }
+        &:not(:last-child){
+            margin-right: 32px;
+        }
+        &:nth-child(4){
+            margin-right: 56px;
+        }
+        &:nth-child(5){
+            border-right: 1px solid #F2F2F2;
+            padding-right: 28px;
+        }
+    }
+    &__link{
+        @include link-unslyled;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.01em;
+        color: #FFF;
+    }
+}
